@@ -16,11 +16,14 @@ Transform how you plan and execute software projects with three specialized AI a
 ## Table of Contents
 
 - [Why Use Claude Code CTO Team?](#why-use-claude-code-cto-team)
+- [Quick Start Commands](#quick-start-commands)
 - [The Three-Agent System](#the-three-agent-system)
 - [Agent Capabilities](#agent-capabilities)
   - [cto-orchestrator](#cto-orchestrator-sonnet)
   - [cto-architect](#cto-architect-opus)
   - [strategic-cto-mentor](#strategic-cto-mentor-opus)
+- [Slash Commands](#slash-commands)
+- [Skills](#skills)
 - [How the Agents Collaborate](#how-the-agents-collaborate)
 - [Prerequisites](#prerequisites)
 - [Installation](#installation)
@@ -38,6 +41,17 @@ Transform how you plan and execute software projects with three specialized AI a
 - **Honest Feedback**: Receive ruthless validation of your plans before costly mistakes
 - **Multi-Domain Expertise**: ML/AI integration, cloud infrastructure, full-stack development, and scalability planning
 - **Faster Decision Making**: Route complex technical questions to the right specialist instantly
+
+## Quick Start Commands
+
+Once installed, use these slash commands to instantly access CTO-level guidance:
+
+| Command | What It Does | Example |
+|---------|--------------|---------|
+| `/validate` | Ruthlessly validate your plans | `/validate my Q2 roadmap` |
+| `/design` | Design system architecture | `/design notification system for 100K users` |
+| `/decide` | Get help with build vs buy decisions | `/decide should we use Auth0 or build custom auth` |
+| `/cto` | General CTO guidance | `/cto our app is slow, users complaining` |
 
 ## The Three-Agent System
 
@@ -119,6 +133,59 @@ User Request
 **Design → Validate**: Architect creates design, mentor stress-tests it
 **Validate → Design**: Mentor identifies flaws, architect revises
 
+## Slash Commands
+
+The CTO Team includes **4 custom slash commands** for quick access to common CTO workflows:
+
+### `/validate` - Strategic Validation
+Ruthlessly validate plans, roadmaps, or proposals before committing resources.
+
+```bash
+/validate my Q2 roadmap: migrate to microservices, add real-time features, launch mobile app
+```
+
+**Output**: 8-section validation report with verdict (GOOD / NEEDS MAJOR WORK / BAD), critical flaws, blindspots, and concrete next steps.
+
+### `/design` - Architecture Design
+Design comprehensive system architecture with technology recommendations.
+
+```bash
+/design real-time notification system for e-commerce platform with 100K users
+```
+
+**Output**: Executive summary, system architecture, technology stack with trade-offs, implementation roadmap, risk assessment.
+
+### `/decide` - Strategic Decisions
+Get help with build vs buy, technology choices, and prioritization dilemmas.
+
+```bash
+/decide should we use OpenAI API or host our own LLM for customer support chatbot
+```
+
+**Output**: Decision framework, TCO analysis, risk assessment, clear recommendation with rationale.
+
+### `/cto` - General Guidance
+General CTO-level guidance for complex or vague requests.
+
+```bash
+/cto we want to add AI capabilities to improve customer retention
+```
+
+**Output**: Clarifying questions, routed to appropriate specialist, structured recommendations.
+
+## Skills
+
+The CTO Team includes **4 specialized skills** that enhance agent capabilities:
+
+| Skill | Agent | Purpose |
+|-------|-------|---------|
+| **request-analyzer** | cto-orchestrator | Classifies requests, detects vagueness, suggests routing |
+| **clarification-protocol** | cto-orchestrator | Generates targeted clarifying questions |
+| **delegation-prompt-crafter** | cto-orchestrator | Creates structured prompts for specialist agents |
+| **validation-report-generator** | strategic-cto-mentor | Generates 8-section validation reports with verdicts |
+
+Skills are automatically discovered and used by agents based on context.
+
 ## Prerequisites
 
 Before installing the CTO Team agents, ensure you have:
@@ -129,35 +196,47 @@ Before installing the CTO Team agents, ensure you have:
 
 ## Installation
 
-### Option 1: Clone the Repository
+### Option 1: Clone the Repository (Recommended)
 
 ```bash
 # Clone the repository
 git clone https://github.com/alirezarezvani/claude-cto-team.git
 
-# Copy agents to your project
-cp -r claude-cto-team/.claude/agents /path/to/your/project/.claude/
+# Copy the entire .claude folder to your project
+cp -r claude-cto-team/.claude /path/to/your/project/
 ```
+
+This installs agents, slash commands, and skills in one step.
 
 ### Option 2: Manual Setup
 
-1. Create the agents directory in your project:
+1. Create the directory structure in your project:
 
 ```bash
-mkdir -p .claude/agents
+mkdir -p .claude/agents .claude/commands .claude/skills
 ```
 
-2. Download or copy the agent files from this repository into `.claude/agents/`:
+2. Download or copy files from this repository:
 
 ```
 .claude/
-└── agents/
-    ├── cto-architect.md
-    ├── cto-orchestrator.md
-    └── strategic-cto-mentor.md
+├── agents/                    # AI subagents
+│   ├── cto-architect.md
+│   ├── cto-orchestrator.md
+│   └── strategic-cto-mentor.md
+├── commands/                  # Slash commands
+│   ├── cto.md
+│   ├── decide.md
+│   ├── design.md
+│   └── validate.md
+└── skills/                    # Agent skills
+    ├── clarification-protocol/
+    ├── delegation-prompt-crafter/
+    ├── request-analyzer/
+    └── validation-report-generator/
 ```
 
-3. The agents are automatically available in Claude Code when you open your project.
+3. The agents and commands are automatically available in Claude Code when you open your project.
 
 ## Usage Examples
 
