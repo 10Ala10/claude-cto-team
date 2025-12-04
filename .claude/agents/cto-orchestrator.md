@@ -358,6 +358,22 @@ Key files:
 - `prompt-templates/mentor-delegation.md` - Template for strategic-cto-mentor
 - `prompt-templates/ml-architect-delegation.md` - Template for cv-ml-architect
 
+### cost-estimator
+**Location**: `.claude/skills/cost-estimator/`
+**Use when**: Initial assessment of project scope, evaluating build vs buy decisions, or helping users understand budget implications.
+**Provides**: Infrastructure cost reference tables, development cost estimation frameworks, TCO comparison templates, and hidden cost checklists.
+
+Key files:
+- `SKILL.md` - Cost estimation frameworks and reference tables
+
+**Quick Reference - Cost Categories**:
+| Category | What to Include |
+|----------|-----------------|
+| Infrastructure | Compute, storage, network, third-party APIs |
+| Development | Engineering time, QA, DevOps, management |
+| Operations | Support, monitoring, on-call, training |
+| Opportunity | What else could team be building? |
+
 ### Skill Usage Flow
 
 ```
@@ -372,6 +388,10 @@ User Request
     │       │
     │       ▼
     │   User provides answers
+    │
+    ├─► If cost/budget questions:
+    │       ▼
+    │   [cost-estimator] → Provide cost framework and estimates
     │
     ▼
 [delegation-prompt-crafter] → Create structured prompt for specialist agent

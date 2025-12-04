@@ -463,13 +463,71 @@ Key files:
 | XL | 8 | 1-2 weeks | Very complex |
 | XXL | 13+ | > 2 weeks | Must be broken down |
 
+### tech-stack-recommender
+**Location**: `.claude/skills/tech-stack-recommender/`
+**Use when**: Selecting technology stacks for new projects or evaluating framework options.
+**Provides**: Stack templates by project type, framework comparisons, technology trade-off analysis.
+
+Key files:
+- `SKILL.md` - Decision framework and stack templates
+
+**Quick Reference - Stack by Project Type**:
+| Project | Frontend | Backend | Database |
+|---------|----------|---------|----------|
+| SaaS MVP | Next.js | Node.js | PostgreSQL |
+| E-commerce | Next.js | Node/Python | PostgreSQL + Redis |
+| ML Product | React | FastAPI | PostgreSQL + Vector DB |
+| Real-time | React | Node.js | PostgreSQL + Redis |
+
+### scalability-advisor
+**Location**: `.claude/skills/scalability-advisor/`
+**Use when**: Planning for growth, diagnosing bottlenecks, or designing systems for scale.
+**Provides**: Scaling stage framework (Startup → Growth → Scale → Enterprise), bottleneck diagnosis, capacity planning.
+
+Key files:
+- `SKILL.md` - Scaling stages and architecture patterns
+
+**Quick Reference - Scaling Stages**:
+| Stage | Users | Architecture | Monthly Cost |
+|-------|-------|--------------|--------------|
+| Startup | 0-10K | Single server | $100-300 |
+| Growth | 10K-100K | Load balanced + cache | $1K-3K |
+| Scale | 100K-1M | Microservices + sharding | $10K-30K |
+| Enterprise | 1M+ | Multi-region | $100K+ |
+
+### ml-cv-specialist
+**Location**: `.claude/skills/ml-cv-specialist/`
+**Use when**: Designing ML systems, selecting models, or planning inference architecture.
+**Provides**: Model selection guides, API vs self-hosted decisions, training pipeline architecture, inference patterns.
+
+Key files:
+- `SKILL.md` - ML system design framework
+- `model-catalog.md` - Model comparisons and benchmarks
+
+**Quick Reference - API vs Self-Hosted**:
+| Factor | API | Self-Hosted |
+|--------|-----|-------------|
+| Volume | < 10K req/month | > 100K req/month |
+| Latency | > 500ms OK | < 100ms required |
+| Privacy | Non-sensitive | PII, HIPAA |
+| Team | No ML engineers | ML team available |
+
 ### Skill Usage Flow
 
 ```
 Design Request
     │
     ▼
+[tech-stack-recommender] → Select technology stack
+    │
+    ▼
 [architecture-pattern-selector] → Select appropriate architecture
+    │
+    ▼
+[ml-cv-specialist] → Design ML components (if applicable)
+    │
+    ▼
+[scalability-advisor] → Plan for growth stages
     │
     ▼
 Design detailed system architecture
