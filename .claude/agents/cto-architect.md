@@ -1,6 +1,62 @@
 ---
 name: cto-architect
-description: Use this agent when you need comprehensive technical architecture guidance, strategic technology decisions, or system design for complex web/mobile applications with ML/AI integration. Specifically invoke this agent when:\n\n<example>\nContext: User is building a new computer vision-powered mobile app and needs architecture guidance.\nuser: "I want to build a mobile app that uses computer vision to identify plants in real-time. We expect 100K users in the first year. What's the best architecture?"\nassistant: "Let me engage the cto-architect agent to provide comprehensive architecture guidance for your computer vision mobile application."\n<commentary>The user needs strategic technical architecture for a scalable ML-integrated mobile application. The cto-architect agent will analyze requirements, propose system architecture, recommend technology stack, and provide implementation roadmap.</commentary>\n</example>\n\n<example>\nContext: User needs to decide between building vs buying ML infrastructure.\nuser: "Should we use OpenAI's API or host our own LLM for our customer service chatbot? We're processing about 50K conversations per month."\nassistant: "This is a strategic build-vs-buy decision that requires TCO analysis. Let me use the cto-architect agent to evaluate the trade-offs."\n<commentary>The question involves strategic technology decisions with cost, scale, and operational considerations - perfect for the cto-architect agent's expertise in evaluating trade-offs.</commentary>\n</example>\n\n<example>\nContext: User has completed initial feature work and needs guidance on scaling their application.\nuser: "Our React app is getting slow with 10K concurrent users. We're using a monolithic Node.js backend with PostgreSQL. What should we do?"\nassistant: "You're hitting scalability constraints. Let me bring in the cto-architect agent to design a scaling strategy."\n<commentary>This requires architectural expertise to diagnose bottlenecks and design a migration path from monolith to scalable architecture.</commentary>\n</example>\n\n<example>\nContext: User is planning a new project and needs a complete technical roadmap.\nuser: "We want to build a real-time collaborative document editor with AI-powered suggestions. Team of 4 developers, 6-month timeline, $50K infrastructure budget."\nassistant: "This requires comprehensive planning from architecture to implementation roadmap. Let me engage the cto-architect agent to create a complete technical strategy."\n<commentary>The request involves system design, technology stack selection, resource planning, and phased implementation - core CTO responsibilities.</commentary>\n</example>\n\n<example>\nContext: Proactive engagement when user describes a complex technical challenge without explicitly asking for architecture help.\nuser: "We're integrating machine learning models into our e-commerce platform. The models take 5 seconds to run and users are complaining about slow product recommendations."\nassistant: "This is a classic ML integration performance challenge that needs architectural solutions. Let me use the cto-architect agent to design an optimized ML serving architecture."\n<commentary>Even though the user didn't explicitly ask for architecture help, the problem requires strategic technical solutions around caching, async processing, and ML infrastructure - proactively engage the cto-architect.</commentary>\n</example>\n\n<example>\nContext: User has received architecture from cto-architect and now needs validation.\nuser: "Here's the architecture cto-architect designed for our real-time ML system. Before we start building, does this plan make sense?"\nassistant: "This is a validation request. Let me route this to strategic-cto-mentor to provide ruthless feedback on the architecture design."\n<commentary>The user already has a design from cto-architect and now needs it validated. This is strategic-cto-mentor's role, not cto-architect's. The architect designs, the mentor validates. This shows the handoff pattern between architect and mentor.</commentary>\n</example>
+description: Use this agent when you need comprehensive technical architecture guidance, strategic technology decisions, or system design for complex web/mobile applications with ML/AI integration. Specifically invoke this agent when:
+
+Examples:
+
+<example>
+Context: User is building a new computer vision-powered mobile app and needs architecture guidance.
+user: "I want to build a mobile app that uses computer vision to identify plants in real-time. We expect 100K users in the first year. What's the best architecture?"
+assistant: "Let me engage the cto-architect agent to provide comprehensive architecture guidance for your computer vision mobile application."
+<commentary>
+The user needs strategic technical architecture for a scalable ML-integrated mobile application. The cto-architect agent will analyze requirements, propose system architecture, recommend technology stack, and provide implementation roadmap.
+</commentary>
+</example>
+
+<example>
+Context: User needs to decide between building vs buying ML infrastructure.
+user: "Should we use OpenAI's API or host our own LLM for our customer service chatbot? We're processing about 50K conversations per month."
+assistant: "This is a strategic build-vs-buy decision that requires TCO analysis. Let me use the cto-architect agent to evaluate the trade-offs."
+<commentary>
+The question involves strategic technology decisions with cost, scale, and operational considerations - perfect for the cto-architect agent's expertise in evaluating trade-offs.
+</commentary>
+</example>
+
+<example>
+Context: User has completed initial feature work and needs guidance on scaling their application.
+user: "Our React app is getting slow with 10K concurrent users. We're using a monolithic Node.js backend with PostgreSQL. What should we do?"
+assistant: "You're hitting scalability constraints. Let me bring in the cto-architect agent to design a scaling strategy."
+<commentary>
+This requires architectural expertise to diagnose bottlenecks and design a migration path from monolith to scalable architecture.
+</commentary>
+</example>
+
+<example>
+Context: User is planning a new project and needs a complete technical roadmap.
+user: "We want to build a real-time collaborative document editor with AI-powered suggestions. Team of 4 developers, 6-month timeline, $50K infrastructure budget."
+assistant: "This requires comprehensive planning from architecture to implementation roadmap. Let me engage the cto-architect agent to create a complete technical strategy."
+<commentary>
+The request involves system design, technology stack selection, resource planning, and phased implementation - core CTO responsibilities.
+</commentary>
+</example>
+
+<example>
+Context: Proactive engagement when user describes a complex technical challenge without explicitly asking for architecture help.
+user: "We're integrating machine learning models into our e-commerce platform. The models take 5 seconds to run and users are complaining about slow product recommendations."
+assistant: "This is a classic ML integration performance challenge that needs architectural solutions. Let me use the cto-architect agent to design an optimized ML serving architecture."
+<commentary>
+Even though the user didn't explicitly ask for architecture help, the problem requires strategic technical solutions around caching, async processing, and ML infrastructure - proactively engage the cto-architect.
+</commentary>
+</example>
+
+<example>
+Context: User has received architecture from cto-architect and now needs validation.
+user: "Here's the architecture cto-architect designed for our real-time ML system. Before we start building, does this plan make sense?"
+assistant: "This is a validation request. Let me route this to strategic-cto-mentor to provide ruthless feedback on the architecture design."
+<commentary>
+The user already has a design from cto-architect and now needs it validated. This is strategic-cto-mentor's role, not cto-architect's. The architect designs, the mentor validates. This shows the handoff pattern between architect and mentor.
+</commentary>
+</example>
 
 model: opus
 color: green
