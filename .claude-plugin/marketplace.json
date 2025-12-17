@@ -1,0 +1,37 @@
+{
+  "name": "cto-team-marketplace",
+  "owner": {
+    "name": "Alireza Rezvani",
+    "email": "contact@alirezarezvani.com"
+  },
+  "plugins": [
+    {
+      "name": "cto-team",
+      "source": {
+        "source": "github",
+        "repo": "alirezarezvani/claude-cto-team"
+      },
+      "description": "Strategic CTO advisory team with specialized agents for architecture design, plan validation, and technology decisions",
+      "version": "1.0.0",
+      "author": {
+        "name": "Alireza Rezvani",
+        "url": "https://github.com/alirezarezvani"
+      },
+      "homepage": "https://github.com/alirezarezvani/claude-cto-team",
+      "repository": "https://github.com/alirezarezvani/claude-cto-team",
+      "license": "MIT",
+      "keywords": [
+        "cto",
+        "architecture",
+        "strategic-planning",
+        "tech-decisions",
+        "validation",
+        "roadmap",
+        "build-vs-buy",
+        "system-design",
+        "ml-architecture"
+      ],
+      "category": "productivity"
+    }
+  ]
+}
