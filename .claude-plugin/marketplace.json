@@ -1,24 +1,24 @@
 {
   "name": "cto-team-marketplace-v1",
   "owner": {
-    "name": "Alireza Rezvani",
-    "email": "contact@alirezarezvani.com"
+    "name": "Ala Baccari",
+    "email": "contact@alabaccari.com"
   },
   "plugins": [
     {
       "name": "cto-team",
       "source": {
         "source": "github",
-        "repo": "alirezarezvani/claude-cto-team"
+        "repo": "10Ala10/claude-cto-team"
       },
       "description": "Strategic CTO advisory team with specialized agents for architecture design, plan validation, and technology decisions",
       "version": "1.0.0",
       "author": {
-        "name": "Alireza Rezvani",
-        "url": "https://github.com/alirezarezvani"
+        "name": "Ala Baccari",
+        "url": "https://github.com/10Ala10"
       },
-      "homepage": "https://github.com/alirezarezvani/claude-cto-team",
-      "repository": "https://github.com/alirezarezvani/claude-cto-team",
+      "homepage": "https://github.com/10Ala10/claude-cto-team",
+      "repository": "https://github.com/10Ala10/claude-cto-team",
       "license": "MIT",
       "keywords": [
         "cto",

@@ -3,11 +3,11 @@
   "version": "1.0.0",
   "description": "Strategic CTO advisory team with specialized agents for architecture design, plan validation, and technology decisions",
   "author": {
-    "name": "Alireza Rezvani",
-    "url": "https://github.com/alirezarezvani"
+    "name": "Ala Baccari",
+    "url": "https://github.com/10Ala10"
   },
-  "homepage": "https://github.com/alirezarezvani/claude-cto-team",
-  "repository": "https://github.com/alirezarezvani/claude-cto-team",
+  "homepage": "https://github.com/10Ala10/claude-cto-team",
+  "repository": "https://github.com/10Ala10/claude-cto-team",
   "license": "MIT",
   "keywords": [
     "cto",

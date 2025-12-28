@@ -2,7 +2,7 @@
   "name": "cto-team",
   "source": {
     "source": "github",
-    "repo": "alirezarezvani/claude-cto-team"
+    "repo": "10Ala10/claude-cto-team"
   },
   "description": "Strategic CTO advisory team with specialized agents for architecture design, plan validation, and technology decisions. Includes cto-orchestrator (coordinator), cto-architect (system designer), and strategic-cto-mentor (ruthless validator) with 12 specialized skills.",
   "version": "1.0.0",
@@ -20,12 +20,12 @@
     "agents"
   ],
   "author": {
-    "name": "Alireza Rezvani",
-    "email": "contact@alirezarezvani.com",
-    "url": "https://github.com/alirezarezvani"
+    "name": "Ala Baccari",
+    "email": "contact@alabaccari.com",
+    "url": "https://github.com/10Ala10"
   },
-  "homepage": "https://github.com/alirezarezvani/claude-cto-team",
-  "repository": "https://github.com/alirezarezvani/claude-cto-team",
+  "homepage": "https://github.com/10Ala10/claude-cto-team",
+  "repository": "https://github.com/10Ala10/claude-cto-team",
   "license": "MIT",
   "components": {
     "agents": 3,
